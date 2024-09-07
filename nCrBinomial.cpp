@@ -7,18 +7,17 @@ int fact(int num){
         fact *= i;
     }
     return fact;
-    
-
 }
 
 int main(){
     int n;
     int r;
+    int value;
     cout<<"Enter the nC number: ";
     cin>>n;
     cout<<"Enter the Cr number: ";
     cin>>r;
-    int value = fact(n)/(fact(r) *  fact(n-r));
-    cout<<"The Value is "<<value<<endl;
+    value = fact(n)/(fact(r) *  fact(n-r));
+    cout<<"The Value is "<< value <<endl;
 
 }
